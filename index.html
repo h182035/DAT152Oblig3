@@ -1,31 +1,87 @@
 <html>
+
 <head>
-<title>Car rental </title>
-<link rel="stylesheet" type="text/css" href="css/standard.css">
+    <title>Car rental </title>
+    <link rel="stylesheet" type="text/css" href="css/standard.css">
 </head>
+
 <body>
-    
+
     <div id="site">
-        <div id="logo"><h1>Car Rental</h1></div>
+        <div id="logo">
+            <h1>Car Rental</h1>
+        </div>
         <div id="carHire">
             <p>Car hire</p>
-         </div>
-         <div id="vanHire">
+        </div>
+        <div id="vanHire">
             <p>Van hire</p>
-         </div>
-         <div id="locations">
+        </div>
+        <div id="locations">
             <p>Locations</p>
-         </div>
-         <div id="business">
+        </div>
+        <div id="business">
             <p>Business hire</p>
-         </div>
-         <div id="offers">
+        </div>
+        <div id="offers">
             <p>Offers</p>
-         </div>
+        </div>
 
-         <div id="biler">
-             <p>biler</p>
-         </div>
+        <div id="biler">
+            <form method="get" action="ordercar.html">
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Image of car</th>
+                    <th>Daily price</th>
+                    <th>Weekly price</th>
+                    <th>Weekend price</th>
+                    <th>Order</th>
+                </tr>
+                <tr id="a">
+                    <td>A</td>
+                    <td><img src="bilder/a.png" alt="Picture of car A" /></td>
+                    <td>30$</td>
+                    <td>200$</td>
+                    <td>120$</td>
+                    <td><button type="submit" name="orderCar" value="a"> Order </button></td>
+                </tr>
+                <tr id="b">
+                    <td>B</td>
+                    <td><img src="bilder/b.png" alt="Picture of car B" /></td>
+                    <td>30$</td>
+                    <td>200$</td>
+                    <td>120$</td>
+                    <td><button type="submit" name="orderCar" value="b"> Order </button></td>
+                </tr>
+                <tr id="c">
+                    <td>C</td>
+                    <td><img src="bilder/c.png" alt="Picture of car C" /></td>
+                    <td>30$</td>
+                    <td>200$</td>
+                    <td>120$</td>
+                    <td><button type="submit" name="orderCar" value="c"> Order </button></td>
+                </tr>
+                <tr id="d">
+                    <td>D</td>
+                    <td><img src="bilder/d.png" alt="Picture of car D" /></td>
+                    <td>30$</td>
+                    <td>200$</td>
+                    <td>120$</td>
+                    <td><button type="submit" name="orderCar" value="d"> Order </button></td>
+                </tr>
+                <tr id="electric">
+                    <td>Electric</td>
+                    <td><img src="bilder/electric.png" alt="Picture of an electric car" /></td>
+                    <td>30$</td>
+                    <td>200$</td>
+                    <td>120$</td>
+                    <td><button type="submit" name="orderCar" value="electric"> Order </button></td>
+                </tr>
+
+            </table>
+            </form>
+        </div>
     </div>
 
 </body>
