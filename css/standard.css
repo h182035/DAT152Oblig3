@@ -2,7 +2,7 @@
     font-size: 20px;
     width:1200px;
     height:1000px;
-    background-color:blue;
+    background-color: beige;
     margin: 0 auto;
     display:grid;
     text-align:center;
@@ -36,8 +36,9 @@
     grid-row-start:2;
     grid-column-start: 5;
 }
-#c{
-    grid-row-start:2;
+#biler{
+    grid-row-start:3;
+    grid-row-end: 5;
     grid-column-start:1;
-    grid-column-end:1;
+    grid-column-end:4;
 }
