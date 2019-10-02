@@ -43,6 +43,13 @@
     grid-column-end:4;
     padding:50px;
 }
+#order{
+    grid-row-start:3;
+    grid-row-end: 5;
+    grid-column-start:1;
+    grid-column-end:4;
+    padding:50px;
+}
 img{
     height: 150px;
 }
