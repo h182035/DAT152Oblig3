@@ -16,24 +16,28 @@
     grid-area: 1 / 1 / 2 / 6;
 }
 
-#carHire{
+#nav{
     grid-row-start:2;
+    grid-row-end:2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#carHire{
     grid-column-start: 1;
 }
 #vanHire{
-    grid-row-start:2;
     grid-column-start: 2;
 }
 #locations{
-    grid-row-start:2;
     grid-column-start: 3;
 }
 #business{
-    grid-row-start:2;
     grid-column-start: 4;
 }
 #offers{
-    grid-row-start:2;
     grid-column-start: 5;
 }
 #biler{
