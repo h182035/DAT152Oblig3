@@ -27,14 +27,30 @@
             <p>Offers</p>
         </div>
         <div id="order">
-                <form>
+                <form method="get" action="confirm.html">
                     <table>
                         <tr>
                             Please fill in the form to order your car
                         </tr>
                         <tr>
+                            <td>Car: </td>
+                            <td id><input type="text" name="carType" id="carType" required/></td>
+                        </tr>
+                        <tr>
                             <td>Name: </td>
                             <td><input type="text"/></td>
+                        </tr>
+                        <tr>
+                            <td>Location: </td>
+                            <td><input type="text" name="location"/></td>
+                        </tr>
+                        <tr>
+                            <td>Time: </td>
+                            <td><input type="text" name="time"/></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="submit">Place an order</button></td>
                         </tr>
                     </table>
                 </form>
@@ -43,7 +59,16 @@
         
     </div>
     
-
+<script>
+var result = null,
+        tmp = [];
+    var items = location.search.substr(1).split("&");
+    for (var index = 0; index < items.length; index++) {
+        tmp = items[index].split("=");
+        if (tmp[0] === 'orderCar') result = decodeURIComponent(tmp[1]);
+    }
+    document.getElementById('carType').value = result
+</script>
 </body>
 
 </html>
