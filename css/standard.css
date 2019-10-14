@@ -22,7 +22,7 @@
     grid-row-start:2;
     grid-row-end:2;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 7;
     display:grid;
     grid-template-columns: repeat(5, 1fr);
 }
@@ -42,6 +42,7 @@
 #offers{
     grid-column-start: 5;
 }
+
 #biler{
     grid-row-start:3;
     grid-row-end: 5;
@@ -104,6 +105,7 @@ a.skip-main {
     overflow: hidden;
     z-index: -999;
 }
+
 a.skip-main:focus {
     left: auto;
     top: auto;
@@ -117,3 +119,16 @@ a.skip-main:focus {
     text-align: center;
     z-index: 999;
 }
+#menu{
+    width:1200px;
+    height:1300px;
+}
+/**
+.active{
+    border-color: #000;
+    border-left-color: blue;
+    border-right-color: blue;
+    color: #000;
+    background-color: darkgoldenrod;
+}
+**/

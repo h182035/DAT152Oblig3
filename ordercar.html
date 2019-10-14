@@ -6,16 +6,18 @@
 </head>
 
 <body>
-
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <a class="skip-main" href="#menu">Skip to menu</a>
     <div id="site">
         <div id="logo">
             <a id="Lsyntax" href="index.html">
                 <h1>Car Rental</h1>
             </a>
         </div>
+        <main id="menu" tabindex="-1">
         <div role="navigation" id="nav">
         <div id="carHire">
-            <a id="farge" href="carinfo.html">
+            <a id="farge" href="carinfo.html" class="active">
                 <p>Car Hire</p>
             </a>
         </div>
@@ -44,7 +46,9 @@
         <div id="order">
                 <form method="get" action="confirm.html">
                     <table>
+                        <main id="main" tabindex="-1">
                         <caption>Order your car here</caption>
+                        </main>
                         <tr>
                           <p> Please fill in the form to order your car </p>
                         </tr>
