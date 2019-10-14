@@ -1,127 +1,132 @@
-#site{
-    font-size: 2em;
-    width:1200px;
-    height:1300px;
-    background-color: beige;
-    color:#000;
-    margin: 0 auto;
-    display:grid;
-    text-align:center;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 2fr 1fr repeat(2, 5fr) 2fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+#site {
+  font-size: 2em;
+  width: 1200px;
+  height: 1300px;
+  background-color: beige;
+  color: #000;
+  margin: 0 auto;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 2fr 1fr repeat(2, 5fr) 2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
-#logo{
-    grid-area: 1 / 1 / 2 / 6;
+#logo {
+  grid-area: 1 / 1 / 2 / 6;
 }
 
-#nav{
-    font-size:0.7em;
-    grid-row-start:2;
-    grid-row-end:2;
-    grid-column-start: 1;
-    grid-column-end: 7;
-    display:grid;
-    grid-template-columns: repeat(5, 1fr);
+#nav {
+  font-size: 0.7em;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
-#carHire{
-    grid-column-start: 1;
+#carHire {
+  grid-column-start: 1;
 }
-#vanHire{
-    grid-column-start: 2;
+#vanHire {
+  grid-column-start: 2;
 }
-#locations{
-    grid-column-start: 3;
+#locations {
+  grid-column-start: 3;
 }
-#business{
-    grid-column-start: 4;
+#confirmed {
+  grid-column-start: 3;
 }
-#offers{
-    grid-column-start: 5;
+#business {
+  grid-column-start: 4;
 }
-
-#biler{
-    grid-row-start:3;
-    grid-row-end: 5;
-    grid-column-start:1;
-    grid-column-end:4;
-    padding:50px;
-}
-#order{
-    grid-row-start:3;
-    grid-row-end: 5;
-    grid-column-start:1;
-    grid-column-end:4;
-    padding:50px;
-}
-img{
-    height: 150px;
-}
-table, td{
-    border: 0.5px solid black;
-}
-table{
-    font-size: 0.7em;
-    color:#000;
-}
-#Lsyntax{
-    color: black;
-    text-decoration: none; /* no underline */
+#offers {
+  grid-column-start: 5;
 }
 
-#farge{
-    text-decoration: none;
-    font-weight: bold;
-    
+#biler {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding: 50px;
 }
-a:link, a:visited {
-    color: black;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  a:hover, a:active {
-   color: rgb(156, 144, 144);
-  }
-  #tilbake:hover{
-      background-color: blue;
-  }
+#order {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding: 50px;
+}
+img {
+  height: 150px;
+}
+table,
+td {
+  border: 0.5px solid black;
+}
+table {
+  font-size: 0.7em;
+  color: #000;
+}
+#Lsyntax {
+  color: black;
+  text-decoration: none; /* no underline */
+}
+
+.farge {
+  text-decoration: none;
+  font-weight: bold;
+}
+a:link,
+a:visited {
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  color: rgb(156, 144, 144);
+}
+#tilbake:hover {
+  background-color: blue;
+}
 /**
   :focus {
     outline: 3px solid black;   
 }
 **/
 a.skip-main {
-    left: -999px;
-    position: absolute;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    z-index: -999;
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
 }
 
 a.skip-main:focus {
-    left: auto;
-    top: auto;
-    width: 30%;
-    height: auto;
-    overflow: auto;
-    margin: 0 35%;
-    padding: 5px;
-    font-size: 20px;
-    outline: 3px solid red;
-    text-align: center;
-    z-index: 999;
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow: auto;
+  margin: 0 35%;
+  padding: 5px;
+  font-size: 20px;
+  outline: 3px solid red;
+  text-align: center;
+  z-index: 999;
 }
-#menu{
-    width:1200px;
-    height:1300px;
+#menu {
+  width: 1200px;
+  height: 1300px;
 }
 /**
 .active{
