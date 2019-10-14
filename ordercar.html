@@ -1,95 +1,95 @@
+<!DOCTYPE html>
 <html lang="en" xml:lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Car rental</title>
+    <link rel="stylesheet" type="text/css" href="css/standard.css" />
+  </head>
 
-<head>
-    <title>Car rental </title>
-    <link rel="stylesheet" type="text/css" href="css/standard.css">
-</head>
-
-<body>
+  <body>
     <a class="skip-main" href="#main">Skip to main content</a>
     <a class="skip-main" href="#menu">Skip to menu</a>
     <div id="site">
-        <div id="logo">
-            <a id="Lsyntax" href="index.html">
-                <h1>Car Rental</h1>
-            </a>
-        </div>
-        <main id="menu" tabindex="-1">
+      <div id="logo">
+        <a id="Lsyntax" href="index.html">
+          <h1>Car Rental</h1>
+        </a>
+      </div>
+      <main id="menu" tabindex="-1">
         <div role="navigation" id="nav">
-        <div id="carHire">
+          <div id="carHire">
             <a id="farge" href="carinfo.html" class="active">
-                <p>Car Hire</p>
+              <p>Car Hire</p>
             </a>
-        </div>
-        <div id="vanHire">
+          </div>
+          <div id="vanHire">
             <a class="farge" href="info.html">
-                <p>Van Hire</p>
+              <p>Van Hire</p>
             </a>
-        </div>
-        <div id="locations">
+          </div>
+          <div id="locations">
             <a class="farge" href="info.html">
-                <p>Locations</p>
+              <p>Locations</p>
             </a>
-        </div>
-        <div id="business">
+          </div>
+          <div id="business">
             <a class="farge" href="info.html">
-                <p>Business hire</p>
+              <p>Business hire</p>
             </a>
-
-        </div>
-        <div id="offers">
+          </div>
+          <div id="offers">
             <a class="farge" href="info.html">
-                <p>Offers</p>
+              <p>Offers</p>
             </a>
+          </div>
         </div>
-        </div>
+        <p>Please fill in the form to order your car</p>
         <div id="order">
-                <form method="get" action="confirm.html">
-                    <table>
-                        <main id="main" tabindex="-1">
-                        <caption>Order your car here</caption>
-                        </main>
-                        <tr>
-                          <p> Please fill in the form to order your car </p>
-                        </tr>
-                        <tr>
-                            <td><label for="carType">Car:</label> </td>
-                            <td id><input type="text" name="carType" id="carType" disabled required/></td>
-                            
-                        </tr>
-                        <tr>
-                            <td><label for="name">Name:</label></td>
-                            <td><input type="text" id="name" required/></td>
-                        </tr>
-                        <tr>
-                            <td><label for="loc">Location:</label> </td>
-                            <td><input type="text" name="location" id = "loc" required/></td>
-                        </tr>
-                        <tr>
-                            <td><label for="time">Time: </label>: </td>
-                            <td><input type="text" name="time" id ="time" required/></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><button type="submit">Place an order</button></td>
-                        </tr>
-                    </table>
-                </form>
-            </div>
-
-        
+          <form method="get" action="confirm.html">
+            <table>
+              <tr>
+                <td><label for="carType">Car:</label></td>
+                <td>
+                  <input
+                    type="text"
+                    name="carType"
+                    id="carType"
+                    disabled
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" required /></td>
+              </tr>
+              <tr>
+                <td><label for="loc">Location:</label></td>
+                <td><input type="text" name="location" id="loc" required /></td>
+              </tr>
+              <tr>
+                <td><label for="time">Time: </label>:</td>
+                <td><input type="text" name="time" id="time" required /></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><button type="submit">Place an order</button></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </main>
     </div>
-    
-<script>
-var result = null,
-        tmp = [];
-    var items = location.search.substr(1).split("&");
-    for (var index = 0; index < items.length; index++) {
-        tmp = items[index].split("=");
-        if (tmp[0] === 'orderCar') result = decodeURIComponent(tmp[1]);
-    }
-    document.getElementById('carType').value = result
-</script>
-</body>
 
+    <script>
+      var result = null,
+        tmp = [];
+      var items = location.search.substr(1).split("&");
+      for (var index = 0; index < items.length; index++) {
+        tmp = items[index].split("=");
+        if (tmp[0] === "orderCar") result = decodeURIComponent(tmp[1]);
+      }
+      document.getElementById("carType").value = result;
+    </script>
+  </body>
 </html>

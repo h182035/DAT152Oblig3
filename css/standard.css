@@ -128,6 +128,11 @@ a.skip-main:focus {
   width: 1200px;
   height: 1300px;
 }
+
+.carTable {
+  margin-left: auto;
+  margin-right: auto;
+}
 /**
 .active{
     border-color: #000;

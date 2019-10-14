@@ -1,108 +1,122 @@
+<!DOCTYPE html>
 <html lang="en" xml:lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-   <title>Car rental </title>
-   <link rel="stylesheet" type="text/css" href="css/standard.css">
-</head>
+    <title>Car rental</title>
+    <link rel="stylesheet" type="text/css" href="css/standard.css" />
+  </head>
 
-<body>
-   <a class="skip-main" href="#main">Skip to main content</a>
-   <a class="skip-main" href="#menu">Skip to menu</a>
-   <div id="site">
+  <body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <a class="skip-main" href="#menu">Skip to menu</a>
+    <div id="site">
       <div id="logo">
-          <a id="Lsyntax" href="index.html">
-              <h1>Car Rental</h1>
-          </a>
+        <a id="Lsyntax" href="index.html">
+          <h1>Car Rental</h1>
+        </a>
       </div>
       <main id="menu" tabindex="-1">
-      <div role="navigation" id="nav">
-      <div id="carHire">
+        <div role="navigation" id="nav">
+          <div id="carHire">
             <a class="farge" href="carinfo.html">
               <p>Car Hire</p>
-          </a>
-      </div>
-      <div id="vanHire">
-          <a class="farge" href="info.html">
+            </a>
+          </div>
+          <div id="vanHire">
+            <a class="farge" href="info.html">
               <p>Van Hire</p>
-          </a>
-      </div>
-      <div id="locations">
-          <a class="farge" href="info.html">
+            </a>
+          </div>
+          <div id="locations">
+            <a class="farge" href="info.html">
               <p>Locations</p>
-          </a>
-      </div>
-      <div id="business">
-          <a class="farge" href="info.html">
+            </a>
+          </div>
+          <div id="business">
+            <a class="farge" href="info.html">
               <p>Business hire</p>
-          </a>
-
-      </div>
-      <div id="offers">
-          <a class="farge" href="info.html">
+            </a>
+          </div>
+          <div id="offers">
+            <a class="farge" href="info.html">
               <p>Offers</p>
-          </a>
-      </div>
-      </div>
-      <div id="biler">
-         <form method="get" action="ordercar.html">
-            <table>
-                  <main id="main" tabindex="-1">
-               <caption>List of car types</caption>
-            </main>
-               <tr>
-                  <th>Category</th>
-                  <th>Image of car</th>
-                  <th>Daily price</th>
-                  <th>Weekly price</th>
-                  <th>Weekend price</th>
-                  <th>Order</th>
-               </tr>
-               <tr id="a">
-                  <td>A</td>
-                  <td><img src="bilder/a.png" alt="Picture of car A" /></td>
-                  <td>30$</td>
-                  <td>200$</td>
-                  <td>120$</td>
-                  <td><button type="submit" name="orderCar" value="a"> Order </button></td>
-               </tr>
-               <tr id="b">
-                  <td>B</td>
-                  <td><img src="bilder/b.png" alt="Picture of car B" /></td>
-                  <td>30$</td>
-                  <td>200$</td>
-                  <td>120$</td>
-                  <td><button type="submit" name="orderCar" value="b"> Order </button></td>
-               </tr>
-               <tr id="c">
-                  <td>C</td>
-                  <td><img src="bilder/c.png" alt="Picture of car C" /></td>
-                  <td>30$</td>
-                  <td>200$</td>
-                  <td>120$</td>
-                  <td><button type="submit" name="orderCar" value="c"> Order </button></td>
-               </tr>
-               <tr id="d">
-                  <td>D</td>
-                  <td><img src="bilder/d.png" alt="Picture of car D" /></td>
-                  <td>30$</td>
-                  <td>200$</td>
-                  <td>120$</td>
-                  <td><button type="submit" name="orderCar" value="d"> Order </button></td>
-               </tr>
-               <tr id="electric">
-                  <td>Electric</td>
-                  <td><img src="bilder/electric.png" alt="Picture of an electric car" /></td>
-                  <td>30$</td>
-                  <td>200$</td>
-                  <td>120$</td>
-                  <td><button type="submit" name="orderCar" value="electric"> Order </button></td>
-               </tr>
-
+            </a>
+          </div>
+        </div>
+        <div id="biler">
+          <p>List of car types</p>
+          <form method="get" action="ordercar.html">
+            <table class="carTable">
+              <tr>
+                <th>Category</th>
+                <th>Image of car</th>
+                <th>Daily price</th>
+                <th>Weekly price</th>
+                <th>Weekend price</th>
+                <th>Order</th>
+              </tr>
+              <tr id="a">
+                <td>A</td>
+                <td><img src="bilder/a.png" alt="Picture of car A" /></td>
+                <td>30$</td>
+                <td>200$</td>
+                <td>120$</td>
+                <td>
+                  <button type="submit" name="orderCar" value="a">Order</button>
+                </td>
+              </tr>
+              <tr id="b">
+                <td>B</td>
+                <td><img src="bilder/b.png" alt="Picture of car B" /></td>
+                <td>30$</td>
+                <td>200$</td>
+                <td>120$</td>
+                <td>
+                  <button type="submit" name="orderCar" value="b">Order</button>
+                </td>
+              </tr>
+              <tr id="c">
+                <td>C</td>
+                <td><img src="bilder/c.png" alt="Picture of car C" /></td>
+                <td>30$</td>
+                <td>200$</td>
+                <td>120$</td>
+                <td>
+                  <button type="submit" name="orderCar" value="c">Order</button>
+                </td>
+              </tr>
+              <tr id="d">
+                <td>D</td>
+                <td><img src="bilder/d.png" alt="Picture of car D" /></td>
+                <td>30$</td>
+                <td>200$</td>
+                <td>120$</td>
+                <td>
+                  <button type="submit" name="orderCar" value="d">Order</button>
+                </td>
+              </tr>
+              <tr id="electric">
+                <td>Electric</td>
+                <td>
+                  <img
+                    src="bilder/electric.png"
+                    alt="Picture of an electric car"
+                  />
+                </td>
+                <td>30$</td>
+                <td>200$</td>
+                <td>120$</td>
+                <td>
+                  <button type="submit" name="orderCar" value="electric">
+                    Order
+                  </button>
+                </td>
+              </tr>
             </table>
-         </form>
-         
-      </div>
-   </div>
-</body>
-
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
